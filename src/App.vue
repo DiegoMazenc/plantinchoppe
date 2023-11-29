@@ -10,7 +10,5 @@ import NavBar from './components/NavBar.vue'
 </template>
 
 <style scoped>
-body{
-  background-color: rgb(36, 36, 36);
-}
+
 </style>
