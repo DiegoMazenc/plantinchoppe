@@ -1,27 +1,36 @@
-<script >
-
+<script>
 import NavBar from './components/NavBar.vue';
 import Aside from './components/Aside.vue';
 import PlantsCard from './components/PlantsCard.vue';
 
 export default {
-methods:{
-  
-}
-
-}
-
-
+  components: {
+    NavBar,
+    Aside,
+    PlantsCard,
+  },
+  data() {
+    return {
+      triAlphabetique: false,
+    };
+  },
+  methods: {
+    handleTriAlphabetique() {
+      this.triAlphabetique = true;
+    },
+  },
+};
 </script>
 
+
 <template>
-  <nav>
- <NavBar/>
-</nav>
-<main class="main">
-  <Aside class="aside"/>
-  <PlantsCard @tri-alphabetique="" class="cards"/>
-</main>
+  <div>
+    <NavBar />
+    <main class="main">
+      <Aside @tri-alphabetique="handleTriAlphabetique" class="aside" />
+      <PlantsCard :triAlphabetique="triAlphabetique" class="cards" />
+    </main>
+  </div>
 </template>
 
 <style scoped>

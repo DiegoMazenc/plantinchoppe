@@ -1,32 +1,33 @@
 <script>
-
-import stockplantes from './data/stockplantes.json'
+import stockplantes from './data/stockplantes.json';
 
 export default {
   name: 'PlantsCard',
-
+  props: {
+    triAlphabetique: Boolean,
+  },
   data() {
     return {
       plantesListe: stockplantes,
-     
     };
   },
-
-  methods: {
-    trierListe() {
-      // Triez la liste en fonction de la propriété spécifiée
-      this.plantesListe.sort((a, b) => (a.price > b.price ? 1 : -1));
+  watch: {
+    triAlphabetique() {
+      this.trierListe();
     },
   },
-
-  // mounted() {
-  //   this.trierListe();
-  // },
-  created() {
-    this.$on("tri-alphabetique", this.trierListe);
+  methods: {
+    trierListe() {
+      if (this.triAlphabetique) {
+        this.plantesListe.sort((a, b) => (a.name > b.name ? 1 : -1));
+      }
+      // Ajoutez d'autres logiques de tri au besoin
+    },
+  },
+  mounted() {
+    this.trierListe();
   },
 };
-
 </script>
 
 <template>
