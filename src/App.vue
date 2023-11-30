@@ -2,11 +2,13 @@
 
 import NavBar from './components/NavBar.vue'
 import Aside from './components/Aside.vue'
+import PlantsCard from './components/PlantsCard.vue';
 
 </script>
 
 <template>
  <NavBar/>
+ <PlantsCard/>
  <Aside/>
 </template>
 

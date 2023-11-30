@@ -1,6 +1,6 @@
 <script>
 
-import stockplantes from '../data/stockplantes.json'
+import stockplantes from './data/stockplantes.json'
 
 export default {
   name: 'PlantsCard',
@@ -23,6 +23,10 @@ export default {
     <div class="card-body">
       <h5 class="card-title">{{ plante.name }}</h5>
       <p class="card-text">{{plante.price}}</p>
+      <p class="card-text">{{plante.entretien}}</p>
+      <p class="card-text">{{plante.taille}}</p>
+      <p class="card-text">{{plante.luminosite}}</p>
+      <p class="card-text">{{plante.couleur}}</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
