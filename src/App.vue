@@ -4,6 +4,7 @@ import TheWelcome from './components/TheWelcome.vue'
 import NavBar from './components/NavBar.vue'
 import Aside from './components/Aside.vue'
 
+
 </script>
 
 <template>
