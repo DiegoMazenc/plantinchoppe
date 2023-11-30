@@ -6,6 +6,7 @@ export default {
   props: {
     triAlphabetique: Boolean,
     triPrix : Boolean, 
+    triTaille : Boolean,
   },
   data() {
     return {
@@ -19,6 +20,9 @@ export default {
     triPrix() {
       this.trierPrix();
     },
+    triTaille(){
+      this.trierTaille();
+    }
   },
   methods: {
     trierListe() {
@@ -33,10 +37,18 @@ export default {
         this.plantesListe.sort((a, b) => (a.price > b.price ? 1 : -1));
       }
     },
+
+    
+      trierTaille(){
+        const taillePetite = this.plantesListe.filter(plante=>
+          plante.taille === "Grande")
+          const plantesListe = this.plantesListe=taillePetite
+          return plantesListe
+      }
   },
-  // mounted() {
-  //   this.trierListe();
-  // },
+
+  
+
 };
 </script>
 

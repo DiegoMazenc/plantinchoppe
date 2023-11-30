@@ -8,7 +8,13 @@ export default {
 
 trierParPrix () {
   this.$emit("tri-prix")
+},
+
+trierParTaille () {
+  this.$emit("Grande")
 }
+
+
   },
 };
 </script>
@@ -19,7 +25,13 @@ trierParPrix () {
       <button @click="trierAlphabetiquement">Alphabétique</button>
       <button @click="trierParPrix">Prix</button>
       <hr />
-      <div>type</div>
+      <label for="taille">taille</label>
+      <select  name="taille" id="taille" @change="trierParTaille">
+        <option value="Sélectionner">Sélectionner</option>
+        <option  value="Petite">Petite</option>
+        <option value="Moyenne">Moyenne</option>
+        <option value="Grande">Grande</option>
+      </select>
       <div>difficulté</div>
       <div>couleur</div>
     </div>
