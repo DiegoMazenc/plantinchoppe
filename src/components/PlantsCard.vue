@@ -7,6 +7,7 @@ export default {
     triAlphabetique: Boolean,
     triPrix : Boolean, 
     triTaille : Boolean,
+    // triEntretien : Boolean,
   },
   data() {
     return {
@@ -20,9 +21,12 @@ export default {
     triPrix() {
       this.trierPrix();
     },
-    triTaille(){
-      this.trierTaille();
-    }
+    triTaille() {
+      this.trierTaille(this.triTaille);
+    },
+    // triEntretien() {
+    //   this.trierEntretien(this.triEntretien);
+    // },
   },
   methods: {
     trierListe() {
@@ -39,12 +43,26 @@ export default {
     },
 
     
-      trierTaille(){
-        const taillePetite = this.plantesListe.filter(plante=>
-          plante.taille === "Grande")
-          const plantesListe = this.plantesListe=taillePetite
-          return plantesListe
+    trierTaille(taille) {
+      if (this.triTaille) {
+        if (taille === "Sélectionner") {
+          this.plantesListe = stockplantes;
+        } else {
+          this.plantesListe = stockplantes.filter(plante => plante.taille === taille);
+        }
       }
+    },
+
+    // trierEntretien(entretien) {
+    //   if (this.triEntretien) {
+    //     if (entretien === "Sélectionner") {
+    //       this.plantesListe = stockplantes;
+    //     } else {
+    //       this.plantesListe = stockplantes.filter(plante => plante.entretien === entretien);
+    //     }
+    //   }
+    // },
+    
   },
 
   

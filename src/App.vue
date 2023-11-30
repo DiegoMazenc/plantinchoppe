@@ -15,10 +15,11 @@ export default {
       triAlphabetique: false,
       triPrix: false,
       triTaille: false,
+      triEntretien: false,
     };
   },
   methods: {
-    handleTriAlphabetique() {
+    handleTriAlphabetique(value) {
       this.triPrix = false; 
       this.triAlphabetique = true;
     },
@@ -28,9 +29,10 @@ export default {
       this.triPrix = true;
     },
 
-    handleTriTaille(){
-      this.triTaille = true
-    }
+    handleTriTaille(taille) {
+      this.triTaille = taille;
+    },
+   
   },
 };
 </script>
@@ -40,8 +42,8 @@ export default {
   <div>
     <NavBar/>
     <main class="main">
-      <Aside @tri-alphabetique="handleTriAlphabetique" @tri-prix="handleTriPrix" @Grande="handleTriTaille" class="aside" />
-      <PlantsCard :triAlphabetique="triAlphabetique" :triPrix="triPrix" :triTaille="triTaille" class="cards" />
+      <Aside @tri-alphabetique="handleTriAlphabetique" @tri-prix="handleTriPrix" @tri-taille="handleTriTaille"  class="aside" />
+      <PlantsCard :triAlphabetique="triAlphabetique" :triPrix="triPrix" :triTaille="triTaille"  class="cards" />
     </main>
   </div>
 </template>
