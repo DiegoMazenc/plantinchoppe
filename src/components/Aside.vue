@@ -1,14 +1,21 @@
 <script>
-export default{
-    name: "Aside"
-}
+export default {
+  name: "Aside",
+  methods: {
+    trierAlphabetiquement() {
+      this.$emit("tri-alphabetique");
+    },
+  },
+  emits:[
+  "tri-alphabetique",
+  ]
+};
 </script>
 
 <template>
     <div class="aside">
         <h3>Trier par</h3>
-        
-        <div>Alphabétique</div>
+        <button @click="trierAlphabetiquement">Alphabétique</button>
         <div>Prix</div>
         <hr/>
         <div>type</div>

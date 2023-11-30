@@ -5,28 +5,41 @@ import stockplantes from './data/stockplantes.json'
 export default {
   name: 'PlantsCard',
 
-  //The imported module should be store as an object so a new proprety as to be set
   data() {
-    return {plantesListe: stockplantes}; 
+    return {
+      plantesListe: stockplantes,
+     
+    };
   },
-  mounted() {
-    console.log(this.plantesListe); 
+
+  methods: {
+    trierListe() {
+      // Triez la liste en fonction de la propriété spécifiée
+      this.plantesListe.sort((a, b) => (a.price > b.price ? 1 : -1));
+    },
   },
-}
+
+  // mounted() {
+  //   this.trierListe();
+  // },
+  created() {
+    this.$on("tri-alphabetique", this.trierListe);
+  },
+};
 
 </script>
 
 <template>
 <div class="cardCard">
   <div v-for="(plante, index) in plantesListe" :key="index" class="card cardContain" >
-    <img src="..." class="card-img-top" alt="..." />
+    <img :src="plante.image" class="card-img-top imgCardSize" alt="..." />
     <div class="card-body">
       <h5 class="card-title">{{ plante.name }}</h5>
-      <p class="card-text">{{plante.price}}</p>
-      <p class="card-text">{{plante.entretien}}</p>
-      <p class="card-text">{{plante.taille}}</p>
-      <p class="card-text">{{plante.luminosite}}</p>
-      <p class="card-text">{{plante.couleur}}</p>
+      <p class="card-text">Prix : {{plante.price}}€</p>
+      <p class="card-text">Difficulté d'entretien : {{plante.entretien}}</p>
+      <p class="card-text">Taille : {{plante.taille}}</p>
+      <p class="card-text">Luminosité : {{plante.luminosité}}</p>
+      <p class="card-text">couleur : {{plante.couleur}}</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
@@ -46,5 +59,9 @@ export default {
 .cardContain{
   width: 350px;
   margin: 10px;
+}
+
+.imgCardSize{
+height: 200px;
 }
 </style>

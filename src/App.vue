@@ -1,8 +1,16 @@
-<script setup>
+<script >
 
-import NavBar from './components/NavBar.vue'
-import Aside from './components/Aside.vue'
+import NavBar from './components/NavBar.vue';
+import Aside from './components/Aside.vue';
 import PlantsCard from './components/PlantsCard.vue';
+
+export default {
+methods:{
+  
+}
+
+}
+
 
 </script>
 
@@ -12,7 +20,7 @@ import PlantsCard from './components/PlantsCard.vue';
 </nav>
 <main class="main">
   <Aside class="aside"/>
-  <PlantsCard class="cards"/>
+  <PlantsCard @tri-alphabetique="" class="cards"/>
 </main>
 </template>
 

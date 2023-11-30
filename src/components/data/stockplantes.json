@@ -1,82 +1,92 @@
 [
-    {
-      "name": "Orchidée",
-      "price": 20.99,
-      "entretien": "Moyenne",
-      "couleur": "Rose",
-      "luminosité": "Moyenne",
-      "taille": "Moyenne"
-    },
-    {
-      "name": "Succulente",
-      "price": 8.99,
-      "entretien": "Faible",
-      "couleur": "Vert",
-      "luminosité": "Élevée",
-      "taille": "Petite"
-    },
-    {
-      "name": "Fougère",
-      "price": 15.50,
-      "entretien": "Faible",
-      "couleur": "Vert",
-      "luminosité": "Moyenne",
-      "taille": "Grande"
-    },
-    {
-      "name": "Bonsaï",
-      "price": 45.00,
-      "entretien": "Moyenne",
-      "couleur": "Vert",
-      "luminosité": "Élevée",
-      "taille": "Petite"
-    },
-    {
-      "name": "Cactus",
-      "price": 5.99,
-      "entretien": "Faible",
-      "couleur": "Vert",
-      "luminosité": "Élevée",
-      "taille": "Petite"
-    },
-    {
-      "name": "Aloe Vera",
-      "price": 12.75,
-      "entretien": "Faible",
-      "couleur": "Vert",
-      "luminosité": "Élevée",
-      "taille": "Moyenne"
-    },
-    {
-      "name": "Hibiscus",
-      "price": 18.99,
-      "entretien": "Moyenne",
-      "couleur": "Rouge",
-      "luminosité": "Élevée",
-      "taille": "Grande"
-    },
-    {
-      "name": "Pothos",
-      "price": 9.50,
-      "entretien": "Faible",
-      "couleur": "Vert",
-      "luminosité": "Faible",
-      "taille": "Moyenne"
-    },
-    {
-      "name": "Bégonia",
-      "price": 14.25,
-      "entretien": "Moyenne",
-      "couleur": "Rose",
-      "luminosité": "Moyenne",
-      "taille": "Petite"
-    },
-    {
-      "name": "Palmier Areca",
-      "price": 55.99,
-      "entretien": "Moyenne",
-      "couleur": "Vert",
-      "luminosité": "Moyenne",
-      "taille": "Grande"
-    }
-  ]
+  {
+    "image": "https://images.ctfassets.net/b85ozb2q358o/d7f307fd56c6ed3e5a0285d2417db318963150706cadac21a3bd6b2cb3dd1455/abe2655ab28ba8599bd33161cd7296d7/image.png",
+    "name": "Orchidée",
+    "price": 20.99,
+    "entretien": "Moyenne",
+    "couleur": "Rose",
+    "luminosité": "Moyenne",
+    "taille": "Moyenne"
+  },
+  {
+    "image": "https://www.jardiner-malin.fr/wp-content/uploads/2021/11/massif-plante-grasse-succulente.jpg",
+    "name": "Succulente",
+    "price": 8.99,
+    "entretien": "Faible",
+    "couleur": "Vert",
+    "luminosité": "Élevée",
+    "taille": "Petite"
+  },
+  {
+    "image": "https://media.ooreka.fr/public/image/fougeres-feuilles-foret-full-12317222.jpg",
+    "name": "Fougère",
+    "price": 15.5,
+    "entretien": "Faible",
+    "couleur": "Vert",
+    "luminosité": "Moyenne",
+    "taille": "Grande"
+  },
+  {
+    "image": "https://www.bonsai-entretien.fr/wp-content/uploads/sites/5/2019/03/pot-bonsai.jpg",
+    "name": "Bonsaï",
+    "price": 45.0,
+    "entretien": "Moyenne",
+    "couleur": "Vert",
+    "luminosité": "Élevée",
+    "taille": "Petite"
+  },
+  {
+    "image": "https://i.notretemps.com/2000x1125/smart/2020/07/23/5-conseils-pour-avoir-de-beaux-cactus.jpeg",
+    "name": "Cactus",
+    "price": 5.99,
+    "entretien": "Faible",
+    "couleur": "Vert",
+    "luminosité": "Élevée",
+    "taille": "Petite"
+  },
+  {
+    "image": "https://www.pepinieresindigenes.fr/_media/img/small/aloe-2.jpg",
+    "name": "Aloe Vera",
+    "price": 12.75,
+    "entretien": "Faible",
+    "couleur": "Vert",
+    "luminosité": "Élevée",
+    "taille": "Moyenne"
+  },
+  {
+    "image": "https://www.deco.fr/sites/default/files/styles/amp_1200_wide_no_upscale/public/2023-04/hibiscus.webp?itok=JZXYRnhK",
+    "name": "Hibiscus",
+    "price": 18.99,
+    "entretien": "Moyenne",
+    "couleur": "Rouge",
+    "luminosité": "Élevée",
+    "taille": "Grande"
+  },
+  {
+    "image": "https://pcfb.gumlet.io/images/articles/golden-pothos-in-bright-living-room.png?w=640&h=426&mode=crop&crop=smart&s=82a0ed0199e5f33e3c490ed80e93f62d",
+    "name": "Pothos",
+    "price": 9.5,
+    "entretien": "Faible",
+    "couleur": "Vert",
+    "luminosité": "Faible",
+    "taille": "Moyenne"
+  },
+  {
+    "image": "https://palmiersetcompagnie.fr/wp-content/uploads/2019/06/IJ-JMG01__MG_0573-Begonia-grandis.jpg",
+    "name": "Bégonia",
+    "price": 14.25,
+    "entretien": "Moyenne",
+    "couleur": "Rose",
+    "luminosité": "Moyenne",
+    "taille": "Petite"
+  },
+  {
+    "image": "https://www.deco.fr/sites/default/files/styles/article_970x500/public/2019-07/shutterstock_1227633244.jpg?itok=gYtZMjFO",
+    "name": "Palmier Areca",
+    "price": 55.99,
+    "entretien": "Moyenne",
+    "couleur": "Vert",
+    "luminosité": "Moyenne",
+    "taille": "Grande"
+  }
+]
