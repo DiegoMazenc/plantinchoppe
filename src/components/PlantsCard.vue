@@ -17,8 +17,8 @@ export default {
 </script>
 
 <template>
-
-  <div v-for="(plante, index) in plantesListe" :key="index" class="card" style="width: 18rem">
+<div class="cardCard">
+  <div v-for="(plante, index) in plantesListe" :key="index" class="card cardContain" >
     <img src="..." class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">{{ plante.name }}</h5>
@@ -30,7 +30,21 @@ export default {
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
-
+</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.cardCard{
+  width: 75%;
+  margin-left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.cardContain{
+  width: 350px;
+  margin: 10px;
+}
+</style>

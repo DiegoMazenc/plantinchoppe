@@ -18,10 +18,5 @@ export default{
 </template>
 
 <style>
-.aside{
-    position: relative;
-    background-color: rgb(62, 135, 122);
-height: 100vh;
-width: 20%;
-}
+
 </style>

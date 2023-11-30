@@ -7,13 +7,27 @@ import PlantsCard from './components/PlantsCard.vue';
 </script>
 
 <template>
+  <nav>
  <NavBar/>
- <PlantsCard/>
- <Aside/>
+</nav>
+<main class="main">
+  <Aside class="aside"/>
+  <PlantsCard class="cards"/>
+</main>
 </template>
 
 <style scoped>
-body{
-  background-color: rgb(36, 36, 36);
+
+
+.aside{
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  background-color: brown;
 }
+.main{
+  display: flex;
+}
+
+
 </style>
