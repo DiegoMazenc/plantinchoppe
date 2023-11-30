@@ -5,6 +5,7 @@ export default {
   name: 'PlantsCard',
   props: {
     triAlphabetique: Boolean,
+    triPrix : Boolean, 
   },
   data() {
     return {
@@ -15,18 +16,27 @@ export default {
     triAlphabetique() {
       this.trierListe();
     },
+    triPrix() {
+      this.trierPrix();
+    },
   },
   methods: {
     trierListe() {
       if (this.triAlphabetique) {
+     
         this.plantesListe.sort((a, b) => (a.name > b.name ? 1 : -1));
       }
-      // Ajoutez d'autres logiques de tri au besoin
+    },
+    trierPrix() {
+      if (this.triPrix) {
+     
+        this.plantesListe.sort((a, b) => (a.price > b.price ? 1 : -1));
+      }
     },
   },
-  mounted() {
-    this.trierListe();
-  },
+  // mounted() {
+  //   this.trierListe();
+  // },
 };
 </script>
 

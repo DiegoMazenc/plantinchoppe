@@ -1,5 +1,6 @@
 <script>
-import NavBar from './components/NavBar.vue';
+
+import NavBar from './components/navbar.vue';
 import Aside from './components/Aside.vue';
 import PlantsCard from './components/PlantsCard.vue';
 
@@ -12,11 +13,18 @@ export default {
   data() {
     return {
       triAlphabetique: false,
+      triPrix: false,
     };
   },
   methods: {
     handleTriAlphabetique() {
+      this.triPrix = false; 
       this.triAlphabetique = true;
+    },
+
+    handleTriPrix() {
+      this.triAlphabetique = false;
+      this.triPrix = true;
     },
   },
 };
@@ -25,10 +33,10 @@ export default {
 
 <template>
   <div>
-    <NavBar />
+    <NavBar/>
     <main class="main">
-      <Aside @tri-alphabetique="handleTriAlphabetique" class="aside" />
-      <PlantsCard :triAlphabetique="triAlphabetique" class="cards" />
+      <Aside @tri-alphabetique="handleTriAlphabetique" @tri-prix="handleTriPrix" class="aside" />
+      <PlantsCard :triAlphabetique="triAlphabetique" :triPrix="triPrix" class="cards" />
     </main>
   </div>
 </template>
